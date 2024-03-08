@@ -8,7 +8,7 @@ on:
 env:
   PLATFORMS: linux/arm64
   SOURCE_REPOSITORY: kozakdenys/qr-code-styling-site
-  DOCKERHUB_REPOSITORY: helllord/qr-code-styling
+  DOCKERHUB_REPOSITORY: helllord/qr-code-styling-site
 
 jobs:
   get-tag:
