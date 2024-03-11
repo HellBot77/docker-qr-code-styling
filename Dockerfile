@@ -13,7 +13,6 @@ COPY --from=base /git/qr-code-styling-site .
 RUN npm install && \
     npm run build
 
-FROM pierrezemb/gostatic
+FROM lipanski/docker-static-website
 
-COPY --from=build /qr-code-styling-site/docs /srv/http
-EXPOSE 8043
+COPY --from=build /qr-code-styling-site/docs .
